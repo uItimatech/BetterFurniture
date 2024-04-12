@@ -1,0 +1,48 @@
+{
+  "itemgroup.better_furniture": "Better Furniture",
+
+  "block.betterfurniture.table_furled": "Table enroulée",
+  "block.betterfurniture.chair_furled": "Chaise enroulée",
+  "block.betterfurniture.stool_furled": "Tabouret enroulé",
+
+  "block.betterfurniture.table_oak": "Table en chêne",
+  "block.betterfurniture.chair_oak": "Chaise en chêne",
+  "block.betterfurniture.stool_oak": "Tabouret en chêne",
+
+  "block.betterfurniture.table_spruce": "Table en épinette",
+  "block.betterfurniture.chair_spruce": "Chaise en épinette",
+  "block.betterfurniture.stool_spruce": "Tabouret en épinette",
+
+  "block.betterfurniture.table_birch": "Table en bouleau",
+  "block.betterfurniture.chair_birch": "Chaise en bouleau",
+  "block.betterfurniture.stool_birch": "Tabouret en bouleau",
+
+  "block.betterfurniture.table_jungle": "Table en acajou",
+  "block.betterfurniture.chair_jungle": "Chaise en acajou",
+  "block.betterfurniture.stool_jungle": "Tabouret en acajou",
+
+  "block.betterfurniture.table_acacia": "Table en acacia",
+  "block.betterfurniture.chair_acacia": "Chaise en acacia",
+  "block.betterfurniture.stool_acacia": "Tabouret en acacia",
+
+  "block.betterfurniture.table_dark_oak": "Table en chêne noir",
+  "block.betterfurniture.chair_dark_oak": "Chaise en chêne noir",
+  "block.betterfurniture.stool_dark_oak": "Tabouret en chêne noir",
+  
+  "block.betterfurniture.table_crimson": "Table carmin",
+  "block.betterfurniture.chair_crimson": "Chaise carmin",
+  "block.betterfurniture.stool_crimson": "Tabouret carmin",
+
+  "block.betterfurniture.table_warped": "Table biscornue",
+  "block.betterfurniture.chair_warped": "Chaise biscornue",
+  "block.betterfurniture.stool_warped": "Tabouret biscornu",
+
+  "block.betterfurniture.table_mangrove": "Table en palétuvier",
+  "block.betterfurniture.chair_mangrove": "Chaise en palétuvier",
+  "block.betterfurniture.stool_mangrove": "Tabouret en palétuvier",
+
+  "block.betterfurniture.table_cherry": "Table en cerisier",
+  "block.betterfurniture.chair_cherry": "Chaise en cerisier",
+  "block.betterfurniture.stool_cherry": "Tabouret en cerisier"
+  
+}

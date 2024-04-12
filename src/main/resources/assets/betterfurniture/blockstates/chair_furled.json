@@ -1,0 +1,40 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "facing": "north"
+            },
+            "apply": {
+                "model": "betterfurniture:block/chair_furled",
+                "y": 0
+            }
+        },
+        {
+            "when": {
+                "facing": "south"
+            },
+            "apply": {
+                "model": "betterfurniture:block/chair_furled",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "east"
+            },
+            "apply": {
+                "model": "betterfurniture:block/chair_furled",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "west"
+            },
+            "apply": {
+                "model": "betterfurniture:block/chair_furled",
+                "y": 270
+            }
+        }
+    ]
+}

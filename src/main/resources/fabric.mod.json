@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "betterfurniture",
+	"version": "${version}",
+	"name": "Better Furniture",
+	"description": "",
+	"authors": [
+		"ultimatech"
+	],
+	"contact": {
+		"homepage": "https://discord.gg/JKjdKKP",
+		"sources": "https://github.com/uItimatech/BetterFurniture",
+		"issues": "https://github.com/uItimatech/BetterFurniture/issues"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/betterfurniture/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ultimatech.betterfurniture.BetterFurniture"
+		],
+		"client": [
+			"net.ultimatech.betterfurniture.BetterFurnitureClient"
+		]
+	},
+	"mixins": [
+		"betterfurniture.mixins.json",
+		{
+			"config": "betterfurniture.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

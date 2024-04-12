@@ -1,0 +1,7 @@
+{
+    "credit": "Made using Blockbench by ultimatech",
+    "parent": "betterfurniture:block/chair",
+    "textures": {
+        "chair": "betterfurniture:block/chair_oak"
+    }
+}

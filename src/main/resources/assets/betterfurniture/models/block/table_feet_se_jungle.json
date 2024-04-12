@@ -1,0 +1,8 @@
+{
+    "credit": "Made using Blockbench by ultimatech",
+    "parent": "betterfurniture:block/table_feet_se",
+    "textures": {
+        "planks": "betterfurniture:block/table_planks_jungle",
+        "table": "betterfurniture:block/table_jungle"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "betterfurniture:block/table_middle_crimson"
+            }
+        },
+        {
+            "when": {
+                "north": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_overlay_n_crimson"
+            }
+        },
+        {
+            "when": {
+                "south": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_overlay_s_crimson"
+            }
+        },
+        {
+            "when": {
+                "east": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_overlay_e_crimson"
+            }
+        },
+        {
+            "when": {
+                "west": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_overlay_w_crimson"
+            }
+        },
+        {
+            "when": {
+                "north": "false",
+                "east": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_feet_ne_crimson"
+            }
+        },
+        {
+            "when": {
+                "north": "false",
+                "west": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_feet_nw_crimson"
+            }
+        },
+        {
+            "when": {
+                "south": "false",
+                "east": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_feet_se_crimson"
+            }
+        },
+        {
+            "when": {
+                "south": "false",
+                "west": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_feet_sw_crimson"
+            }
+        }
+    ]
+}

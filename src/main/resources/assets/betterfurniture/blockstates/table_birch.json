@@ -1,0 +1,77 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "betterfurniture:block/table_middle_birch"
+            }
+        },
+        {
+            "when": {
+                "north": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_overlay_n_birch"
+            }
+        },
+        {
+            "when": {
+                "south": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_overlay_s_birch"
+            }
+        },
+        {
+            "when": {
+                "east": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_overlay_e_birch"
+            }
+        },
+        {
+            "when": {
+                "west": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_overlay_w_birch"
+            }
+        },
+        {
+            "when": {
+                "north": "false",
+                "east": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_feet_ne_birch"
+            }
+        },
+        {
+            "when": {
+                "north": "false",
+                "west": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_feet_nw_birch"
+            }
+        },
+        {
+            "when": {
+                "south": "false",
+                "east": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_feet_se_birch"
+            }
+        },
+        {
+            "when": {
+                "south": "false",
+                "west": "false"
+            },
+            "apply": {
+                "model": "betterfurniture:block/table_feet_sw_birch"
+            }
+        }
+    ]
+}

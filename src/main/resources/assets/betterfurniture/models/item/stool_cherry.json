@@ -1,0 +1,7 @@
+{
+    "credit": "Made using Blockbench by ultimatech",
+    "parent": "betterfurniture:block/stool",
+    "textures": {
+        "stool": "betterfurniture:block/stool_cherry"
+    }
+}

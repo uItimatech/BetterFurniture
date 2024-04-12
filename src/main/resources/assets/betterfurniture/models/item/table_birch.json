@@ -1,0 +1,8 @@
+{
+    "credit": "Made using Blockbench by ultimatech",
+    "parent": "betterfurniture:item/table",
+    "textures": {
+        "planks": "betterfurniture:block/table_planks_birch",
+        "table": "betterfurniture:block/table_birch"
+    }
+}

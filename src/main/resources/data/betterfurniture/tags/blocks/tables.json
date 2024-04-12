@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "values": [
+        "betterfurniture:table_oak",
+        "betterfurniture:table_spruce",
+        "betterfurniture:table_birch",
+        "betterfurniture:table_jungle",
+        "betterfurniture:table_acacia",
+        "betterfurniture:table_dark_oak",
+        "betterfurniture:table_crimson",
+        "betterfurniture:table_warped",
+        "betterfurniture:table_mangrove",
+        "betterfurniture:table_cherry",
+        "betterfurniture:table_furled"
+    ]
+}

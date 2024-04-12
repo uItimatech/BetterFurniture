@@ -1,0 +1,40 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "facing": "north"
+            },
+            "apply": {
+                "model": "betterfurniture:block/chair_dark_oak",
+                "y": 0
+            }
+        },
+        {
+            "when": {
+                "facing": "south"
+            },
+            "apply": {
+                "model": "betterfurniture:block/chair_dark_oak",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "east"
+            },
+            "apply": {
+                "model": "betterfurniture:block/chair_dark_oak",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "west"
+            },
+            "apply": {
+                "model": "betterfurniture:block/chair_dark_oak",
+                "y": 270
+            }
+        }
+    ]
+}

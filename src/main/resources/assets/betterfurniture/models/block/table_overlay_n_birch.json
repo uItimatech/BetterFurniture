@@ -1,0 +1,7 @@
+{
+    "credit": "Made using Blockbench by ultimatech",
+    "parent": "betterfurniture:block/table_overlay_n",
+    "textures": {
+        "table": "betterfurniture:block/table_birch"
+    }
+}
