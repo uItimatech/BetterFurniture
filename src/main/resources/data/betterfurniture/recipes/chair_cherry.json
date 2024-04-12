@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "P  ",
-    "PPP",
-    "S S"
+    "P ",
+    "PP",
+    "SS"
   ],
   "result": {
     "item": "betterfurniture:chair_cherry"

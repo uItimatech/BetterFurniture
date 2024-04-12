@@ -10,10 +10,10 @@
     }
   },
   "pattern": [
-    "PPP",
-    "S S"
+    "PP",
+    "SS"
   ],
   "result": {
-    "item": "betterfurniture:stool_jungle"
+    "item": "betterfurniture:table_jungle"
   }
 }
