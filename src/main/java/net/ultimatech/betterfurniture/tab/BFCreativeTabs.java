@@ -20,6 +20,8 @@ public class BFCreativeTabs {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.better_furniture"))
                     .icon(() -> new ItemStack(BFBlocks.OAK_TABLE)).entries((displayContext, entries) -> {
 
+                        BFConfig.load();
+
                         if (BFConfig.tablesEnabled) {
                             entries.add(BFBlocks.OAK_TABLE);
                             entries.add(BFBlocks.SPRUCE_TABLE);

@@ -21,6 +21,9 @@
 		],
 		"client": [
 			"net.ultimatech.betterfurniture.BetterFurnitureClient"
+		],
+		"modmenu": [
+			"net.ultimatech.betterfurniture.compat.ModMenuApiImpl"
 		]
 	},
 	"mixins": [
