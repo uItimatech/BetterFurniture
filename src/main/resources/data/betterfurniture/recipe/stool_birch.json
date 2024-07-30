@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+        "P": {
+            "item": "minecraft:birch_planks"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "pattern": [
+        "PP",
+        "SS"
+    ],
+    "result": {
+        "id": "betterfurniture:stool_birch"
+    }
+}

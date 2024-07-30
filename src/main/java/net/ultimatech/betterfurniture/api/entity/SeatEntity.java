@@ -3,10 +3,12 @@ package net.ultimatech.betterfurniture.api.entity;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.*;
+import net.minecraft.entity.data.DataTracker;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
+import net.minecraft.server.network.EntityTrackerEntry;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.*;
@@ -34,6 +36,11 @@ public class SeatEntity extends Entity {
         this.noClip = true;
     }
 
+    @Override
+    protected void initDataTracker(DataTracker.Builder builder) {
+
+    }
+
     public SeatEntity(World world) {
         super(BFEntityType.SEAT, world);
         this.noClip = true;
@@ -51,10 +58,6 @@ public class SeatEntity extends Entity {
         this.setPosition(blockPos.getX() + 0.5, blockPos.getY() + 0.5, blockPos.getZ() + 0.5);
         this.setRotation(direction.getOpposite().asRotation(), 0F);
         this.noClip = true;
-    }
-
-    @Override
-    protected void initDataTracker() {
     }
 
     @Override
@@ -85,11 +88,9 @@ public class SeatEntity extends Entity {
     }
 
     @Override
-    public Packet<ClientPlayPacketListener> createSpawnPacket() {
-        return new EntitySpawnS2CPacket(this);
+    public Packet<ClientPlayPacketListener> createSpawnPacket(EntityTrackerEntry entityTrackerEntry) {
+        return new EntitySpawnS2CPacket(this, entityTrackerEntry, this.getId());
     }
-
-
 
     public static ActionResult create(World world, BlockPos blockPos, LivingEntity placer, Direction direction) {
 
@@ -122,7 +123,7 @@ public class SeatEntity extends Entity {
             for(EntityPose entityPose : immutableList) {
 
                 EntityDimensions entityDimensions = entity.getDimensions(entityPose);
-                float f = Math.min(entityDimensions.width, 1.0F) / 2.0F;
+                float f = Math.min(entityDimensions.width(), 1.0F) / 2.0F;
 
                 for(int i : Objects.requireNonNull(DISMOUNT_FREE_Y_SPACES_NEEDED.get(entityPose))) {
 
@@ -131,7 +132,7 @@ public class SeatEntity extends Entity {
                         double d = this.getWorld().getDismountHeight(Dismounting.getCollisionShape(this.getWorld(), mutable), () -> Dismounting.getCollisionShape(this.getWorld(), mutable.down()));
 
                         if (Dismounting.canDismountInBlock(d)) {
-                            Box box = new Box((-f), 0.0, (-f), f, entityDimensions.height, f);
+                            Box box = new Box((-f), 0.0, (-f), f, entityDimensions.height(), f);
                             Vec3d vec3d = Vec3d.ofCenter(mutable, d);
 
                             if (Dismounting.canPlaceEntityAt(this.getWorld(), entity, box.offset(vec3d))) {
@@ -149,7 +150,7 @@ public class SeatEntity extends Entity {
             mutable.set(blockPos.getX(), e, blockPos.getZ());
 
             for(EntityPose entityPose2 : immutableList) {
-                double g = entity.getDimensions(entityPose2).height;
+                double g = entity.getDimensions(entityPose2).height();
                 int j = MathHelper.ceil(e - (double)mutable.getY() + g);
                 double h = Dismounting.getCeilingHeight(mutable, j, pos -> this.getWorld().getBlockState(pos.up()).getCollisionShape(this.getWorld(), pos.up()));
 

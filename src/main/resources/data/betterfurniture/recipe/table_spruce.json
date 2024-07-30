@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+        "P": {
+            "item": "minecraft:spruce_planks"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "pattern": [
+        "PPP",
+        "S S",
+        "S S"
+    ],
+    "result": {
+        "id": "betterfurniture:table_spruce"
+    }
+}

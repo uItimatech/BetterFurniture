@@ -11,7 +11,7 @@ import net.ultimatech.betterfurniture.BetterFurniture;
 public class YACLConfig {
 
     public static ConfigClassHandler<YACLConfig> HANDLER = ConfigClassHandler.createBuilder(YACLConfig.class)
-            .id(new Identifier(BetterFurniture.MOD_ID, "bf_config"))
+            .id(Identifier.of(BetterFurniture.MOD_ID, "bf_config"))
             .serializer(config -> {
                 return GsonConfigSerializerBuilder.create(config)
                         .setPath(FabricLoader.getInstance().getConfigDir().resolve("betterfurniture.json5"))

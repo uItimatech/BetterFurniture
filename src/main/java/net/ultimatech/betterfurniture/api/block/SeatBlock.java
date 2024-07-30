@@ -67,7 +67,7 @@ public class SeatBlock extends Block implements Waterloggable {
     }
 
     @Override
-    public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+    protected ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, BlockHitResult hit) {
 
         if (!player.shouldCancelInteraction() && world instanceof ServerWorld serverWorld) {
 
@@ -110,18 +110,9 @@ public class SeatBlock extends Block implements Waterloggable {
     }
 
     @Override
-    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
-        return switch (type) {
-            case LAND -> false;
-            case WATER -> world.getFluidState(pos).isIn(FluidTags.WATER);
-            case AIR -> false;
-            default -> false;
-        };
+    protected boolean canPathfindThrough(BlockState state, NavigationType type) {
+        return false;
     }
-
-
-
-
 
     // ----- RENDERING ----- //
     public boolean isTransparent(BlockState state, BlockView world, BlockPos pos) {

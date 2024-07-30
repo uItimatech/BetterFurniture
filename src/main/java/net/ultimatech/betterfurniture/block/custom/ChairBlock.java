@@ -47,15 +47,11 @@ public class ChairBlock extends SeatBlock {
     VoxelShape SHAPE_WEST = VoxelShapes.union(BASE, LEGS, BACK_WEST);
 
     public static final DirectionProperty FACING = DirectionProperty.of("facing", Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST);
-    public static final BooleanProperty OCCUPIED = BooleanProperty.of("occupied");
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public ChairBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(this.getDefaultState()
-                .with(WATERLOGGED, false)
-                .with(FACING, Direction.NORTH)
-                .with(OCCUPIED, false));
+        this.setDefaultState(super.getDefaultState()
+                .with(FACING, Direction.NORTH));
     }
 
     @Override
@@ -68,13 +64,13 @@ public class ChairBlock extends SeatBlock {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING, WATERLOGGED, OCCUPIED);
+        super.appendProperties(builder);
+        builder.add(FACING);
     }
 
 
-
     @Override
-    public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+    protected ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player, BlockHitResult hit) {
 
         if (!player.shouldCancelInteraction() && world instanceof ServerWorld serverWorld) {
 

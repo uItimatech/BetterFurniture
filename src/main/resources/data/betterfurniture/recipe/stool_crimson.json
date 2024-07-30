@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "key": {
+        "P": {
+            "item": "minecraft:crimson_planks"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "pattern": [
+        "PP",
+        "SS"
+    ],
+    "result": {
+        "id": "betterfurniture:stool_crimson"
+    }
+}

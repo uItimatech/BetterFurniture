@@ -16,7 +16,7 @@ public class BFCreativeTabs {
 
     @SuppressWarnings("unused")
     public static final ItemGroup BETTER_FURNITURE = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(BetterFurniture.MOD_ID, "better_furniture"),
+            Identifier.of(BetterFurniture.MOD_ID, "better_furniture"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.better_furniture"))
                     .icon(() -> new ItemStack(BFBlocks.OAK_TABLE)).entries((displayContext, entries) -> {
 

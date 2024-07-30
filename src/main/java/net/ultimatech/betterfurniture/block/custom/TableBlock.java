@@ -80,13 +80,8 @@ public class TableBlock extends ConnectedHorizontalBlock implements Waterloggabl
     }
 
     @Override
-    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
-        return switch (type) {
-            case LAND -> false;
-            case WATER -> world.getFluidState(pos).isIn(FluidTags.WATER);
-            case AIR -> false;
-            default -> false;
-        };
+    protected boolean canPathfindThrough(BlockState state, NavigationType type) {
+        return false;
     }
 
     @Override
