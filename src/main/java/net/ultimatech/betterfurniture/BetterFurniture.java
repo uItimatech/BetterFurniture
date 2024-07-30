@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.ultimatech.betterfurniture.block.BFBlocks;
 import net.ultimatech.betterfurniture.config.BFConfig;
+import net.ultimatech.betterfurniture.entity.BFEntityType;
 import net.ultimatech.betterfurniture.tab.BFCreativeTabs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,10 +27,13 @@ public class BetterFurniture implements ModInitializer {
 		BFConfig.save();
 		BFConfig.load();
 
-		// --- Global registers --- //
+		// --- Global registries --- //
+
 		BFBlocks.registerModBlocks();
 
 		BFCreativeTabs.registerItemGroups();
+
+		BFEntityType.register();
 
 
 
